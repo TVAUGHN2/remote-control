@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="0"
+    tools:context="edu.depaul.tvaughn2.tvaughn2remotecontrol.MainActivity">
+
+    <!--My TV Section-->
+    <TableRow
+        android:paddingTop="5dp"
+        android:paddingLeft="16dp"
+        android:background="@color/mytv_background"
+        android:textColor="@color/mytv_text">
+        <TextView
+            android:paddingLeft="20dp"
+            android:gravity="start"
+            android:text="@string/tv_pow_label"
+            android:layout_span="2"
+            android:layout_column="1"/>
+        <TextView
+            android:id="@+id/tv_pow"
+            android:paddingLeft="20dp"
+            android:gravity="left"
+            android:text="@string/on" />
+    </TableRow>
+
+    <TableRow
+        android:background="@color/mytv_background"
+        android:textColor="@color/mytv_text"
+        android:paddingLeft="16dp">
+        <TextView
+            android:gravity="start"
+            android:text="@string/mytv"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:gravity="start"
+            android:text="@string/speaker_label"
+            android:layout_span="2"/>
+
+        <TextView
+            android:id="@+id/speaker_vol"
+            android:paddingLeft="20dp"
+            android:gravity="left"
+            android:text="@string/speaker_default" />
+    </TableRow>
+
+    <TableRow
+        android:background="@color/mytv_background"
+        android:textColor="@color/mytv_text"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp">
+        <TextView
+            android:paddingLeft="20dp"
+            android:gravity="start"
+            android:text="@string/cur_ch_label"
+            android:layout_span="2"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/cur_ch"
+            android:paddingLeft="20dp"
+            android:gravity="left"
+            android:text="@string/cur_ch_default" />
+    </TableRow>
+
+
+    <!--My Remote Control Section-->
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp">
+        <TextView
+            android:gravity="center"
+            android:text="@string/myrc"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_span="4"/>
+    </TableRow>
+
+    <TableRow
+        android:paddingLeft="16dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:text="@string/rc_pow_label"/>
+        <Switch
+            android:layout_marginRight="15dp"
+            android:id="@+id/power_switch"
+            android:tag="power_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_column="2"/>
+    </TableRow>
+
+    <TableRow
+        android:paddingLeft="16dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:text="@string/vol_label"/>
+        <SeekBar
+            android:id="@+id/volume_seek"
+            android:tag="volume_seek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="50"
+            android:layout_span="3"/>
+    </TableRow>
+
+    <TableRow android:paddingLeft="16dp">
+        <TextView
+            android:text="@string/ch_label" />
+        <Button
+            android:id="@+id/btn0"
+            android:tag="btn0"
+            android:text="@string/btn0" />
+        <Button
+            android:id="@+id/btn1"
+            android:tag="btn1"
+            android:text="@string/btn1" />
+        <Button
+            android:id="@+id/btn2"
+            android:text="@string/btn2" />
+    </TableRow>
+
+    <TableRow android:paddingLeft="16dp">
+        <Button
+            android:layout_column="1"
+            android:id="@+id/btn3"
+            android:tag="btn3"
+            android:text="@string/btn3" />
+        <Button
+            android:id="@+id/btn4"
+            android:tag="btn4"
+            android:text="@string/btn4" />
+        <Button
+            android:id="@+id/btn5"
+            android:tag="btn5"
+            android:text="@string/btn5" />
+    </TableRow>
+
+    <TableRow android:paddingLeft="16dp">
+        <Button
+            android:layout_column="1"
+            android:id="@+id/btn6"
+            android:tag="btn6"
+            android:text="@string/btn6" />
+        <Button
+            android:id="@+id/btn7"
+            android:tag="btn7"
+            android:text="@string/btn7" />
+        <Button
+            android:id="@+id/btn8"
+            android:tag="btn8"
+            android:text="@string/btn8" />
+    </TableRow>
+
+    <TableRow android:paddingLeft="16dp">
+        <Button
+            android:layout_column="1"
+            android:id="@+id/btn9"
+            android:tag="btn9"
+            android:text="@string/btn9" />
+        <Button
+            android:id="@+id/ch_plus"
+            android:tag="ch_plus"
+            android:text="@string/btn_ch_plus" />
+        <Button
+            android:id="@+id/ch_minus"
+            android:tag="ch_minus"
+            android:text="@string/btn_ch_minus" />
+    </TableRow>
+
+    <TableRow
+        android:paddingLeft="16dp">
+        <TextView
+            android:text="@string/fav_ch" />
+        <Button
+            android:id="@+id/fav1"
+            android:tag="fav1"
+            android:text="@string/btn_ch_fav1" />
+        <Button
+            android:id="@+id/fav2"
+            android:tag="fav2"
+            android:text="@string/btn_ch_fav2" />
+        <Button
+            android:id="@+id/fav3"
+            android:tag="fav3"
+            android:text="@string/btn_ch_fav3" />
+    </TableRow>
+
+    <TableRow
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp">
+        <Button
+            android:id="@+id/switch_dvr"
+            android:tag="switch_dvr"
+            android:text="@string/switch_dvr"
+            android:layout_span="2" />
+        <Button
+            android:id="@+id/switch_config"
+            android:tag="switch_config"
+            android:text="@string/switch_config"
+            android:layout_span="2"
+            android:layout_column="2"/>
+    </TableRow>
+
+</TableLayout>

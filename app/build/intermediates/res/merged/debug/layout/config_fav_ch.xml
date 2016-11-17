@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="edu.depaul.tvaughn2.tvaughn2remotecontrol.Config">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/config_title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/config_label"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/fav_ch_row"
+            android:weightSum="1"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="62dp"
+                android:text="@string/fav_ch_config_label"
+                android:minLines="3"
+                android:id="@+id/fav_ch_view" />
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@+id/fav_ch_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/lin_table_layout">
+                <RadioButton
+                    android:id="@+id/radio_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="16dp"
+                    android:text="Left"
+                    android:checked="false" />
+                <RadioButton
+                    android:id="@+id/radio_middle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="16dp"
+                    android:text="Middle"
+                    android:checked="false"/>
+                <RadioButton
+                    android:id="@+id/radio_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Right"
+                    android:checked="false"
+                    android:gravity="center_vertical" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/label_row"
+            android:layout_below="@id/fav_ch_row"
+            android:layout_alignLeft = "@id/fav_ch_row"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:id="@+id/label_view"
+                android:text="@string/fav_ch_name"
+                android:layout_height="wrap_content"
+                android:layout_width="62dp"
+                android:layout_below="@id/fav_ch_view"
+                android:layout_alignLeft = "@id/fav_ch_view"/>
+            <EditText
+                android:id="@+id/fav_ch_name"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:inputType="textCapCharacters"
+                android:imeOptions="actionNext"
+                android:layout_below="@id/radio_left"
+                android:layout_alignLeft="@id/fav_ch_radiogroup"
+                android:layout_alignRight="@id/fav_ch_radiogroup"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ch_row"
+            android:layout_below="@id/label_row"
+            android:layout_alignLeft = "@id/label_row"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/ch_view"
+                android:text="@string/ch_label"
+                android:layout_height="wrap_content"
+                android:layout_width="62dp"
+                android:layout_below="@id/fav_ch_view" />
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="match_parent"
+                android:paddingRight="16dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:layout_below="@id/fav_ch_name"
+                android:layout_alignRight="@id/fav_ch_name"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@id/lin_table_layout"
+            android:layout_below="@id/ch_row"
+            android:layout_alignLeft = "@id/ch_row"
+            android:layout_marginLeft="78dp"
+            android:paddingTop="16dp">
+
+            <TableLayout
+                android:id="@+id/table_layout"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_gravity="right"
+                android:layout_alignLeft="@id/fav_ch_radiogroup"
+                android:layout_marginRight="16dp">
+
+                <TableRow
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/button_row_1">
+
+                    <Button
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="1"
+                        android:id="@+id/btn0"
+                        android:tag="btn0"
+                        android:text="@string/btn0" />
+
+                    <Button
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/btn1"
+                        android:tag="btn1"
+                        android:text="@string/btn1" />
+                    <Button
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/btn2"
+                        android:text="@string/btn2" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/button_row_2">
+                    <Button
+                        android:layout_column="1"
+                        android:id="@+id/btn3"
+                        android:tag="btn3"
+                        android:text="@string/btn3" />
+                    <Button
+                        android:id="@+id/btn4"
+                        android:tag="btn4"
+                        android:text="@string/btn4" />
+                    <Button
+                        android:id="@+id/btn5"
+                        android:tag="btn5"
+                        android:text="@string/btn5" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/button_row_3">
+                    <Button
+                        android:layout_column="1"
+                        android:id="@+id/btn6"
+                        android:tag="btn6"
+                        android:text="@string/btn6" />
+                    <Button
+                        android:id="@+id/btn7"
+                        android:tag="btn7"
+                        android:text="@string/btn7" />
+                    <Button
+                        android:id="@+id/btn8"
+                        android:tag="btn8"
+                        android:text="@string/btn8" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/button_row_4">
+                    <Button
+                        android:layout_column="1"
+                        android:id="@+id/btn9"
+                        android:tag="btn9"
+                        android:text="@string/btn9" />
+                    <Button
+                        android:id="@+id/ch_plus"
+                        android:tag="ch_plus"
+                        android:text="@string/btn_ch_plus" />
+                    <Button
+                        android:id="@+id/ch_minus"
+                        android:tag="ch_minus"
+                        android:text="@string/btn_ch_minus" />
+                </TableRow>
+
+                <TableRow
+                    android:paddingTop="20dp"
+                    android:id="@+id/button_row_5">
+                    <Button
+                        android:layout_column="1"
+                        android:id="@+id/clear"
+                        android:tag="clear"
+                        android:text="@string/clear" />
+                    <Button
+                        android:id="@+id/cancel"
+                        android:tag="cancel"
+                        android:text="@string/cancel" />
+                    <Button
+                        android:id="@+id/save"
+                        android:tag="save"
+                        android:text="@string/save" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

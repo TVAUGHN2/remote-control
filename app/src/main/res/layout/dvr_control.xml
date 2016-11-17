@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.depaul.tvaughn2.tvaughn2remotecontrol.MainActivity">
+
+    <!--My TV Section-->
+    <TableRow
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/mydvr_background"
+        android:textColor="@color/mydvr_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="@string/mydvr"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:elevation="1dp" />
+        <TableLayout
+            android:layout_weight="4">
+            <TableRow>
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:gravity="start"
+                    android:text="@string/dvr_pow_label" />
+                <TextView
+                    android:id="@+id/dvr_pow"
+                    android:paddingLeft="20dp"
+                    android:gravity="left"
+                    android:text="@string/on" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:text="@string/state_label"
+                    android:gravity="left|start" />
+
+                <TextView
+                    android:id="@+id/state"
+                    android:paddingLeft="20dp"
+                    android:gravity="left"
+                    android:text="@string/state_default" />
+            </TableRow>
+
+        </TableLayout>
+    </TableRow>
+
+
+    <!--My Remote Control Section-->
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+        <TextView
+            android:gravity="center"
+            android:text="@string/dvr_rc"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+
+        <TextView android:text="@string/rc_pow_label"
+            android:padding="10dp"
+            android:gravity="right" />
+        <Switch
+            android:id="@+id/dvr_power_switch"
+            android:paddingLeft="10dp"
+            android:tag="dvr_power_switch"
+            android:checked="true"
+            android:gravity="left|start"
+            android:layout_gravity="left" />
+    </TableRow>
+
+    <TableRow
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/play"
+            android:layout_weight="5"
+            android:tag="play"
+            android:text="@string/play" />
+        <Button
+            android:id="@+id/stop"
+            android:layout_weight="5"
+            android:tag="stop"
+            android:text="@string/stop"
+            android:gravity="center"
+            android:elevation="0dp" />
+        <Button
+            android:id="@+id/pause"
+            android:layout_weight="0"
+            android:tag="pause"
+            android:text="@string/pause"
+            android:elevation="0dp" />
+    </TableRow>
+
+    <TableRow
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal">
+        <Button
+            android:gravity="center"
+            android:id="@+id/ff"
+            android:layout_weight="1"
+            android:tag="ff"
+            android:text="@string/ff"/>
+        <Button
+            android:gravity="center"
+            android:id="@+id/frwd"
+            android:layout_weight="1"
+            android:tag="frwd"
+            android:text="@string/frwd" />
+    </TableRow>
+
+    <TableRow android:paddingLeft="32dp">
+        <Button
+            android:id="@+id/record"
+            android:tag="record"
+            android:text="@string/record"
+            android:layout_gravity="left" />
+    </TableRow>
+
+    <RelativeLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal">
+        <Button
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/switch_tv"
+            android:tag="switch_tv"
+            android:text="@string/switch_tv"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</TableLayout>

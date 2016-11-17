@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/travisvaughn/Documents/School/MobileDev/tvaughn2RemoteControl/C:\\Users\\Travis\\Desktop\\School\\Mobile Dev - Android\\tvaughn2RemoteControl\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/travisvaughn/Documents/School/MobileDev/tvaughn2RemoteControl/C:\\Users\\Travis\\Desktop\\School\\Mobile Dev - Android\\tvaughn2RemoteControl\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/Users/travisvaughn/Documents/School/MobileDev/tvaughn2RemoteControl/C:\\Users\\Travis\\Desktop\\School\\Mobile Dev - Android\\tvaughn2RemoteControl\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/travisvaughn/Documents/School/MobileDev/tvaughn2RemoteControl/C:\\Users\\Travis\\Desktop\\School\\Mobile Dev - Android\\tvaughn2RemoteControl\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/Users/travisvaughn/Documents/School/MobileDev/tvaughn2RemoteControl/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/travisvaughn/Documents/School/MobileDev/tvaughn2RemoteControl/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/Users/travisvaughn/Documents/School/MobileDev/tvaughn2RemoteControl/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/travisvaughn/Documents/School/MobileDev/tvaughn2RemoteControl/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    }
+]
